@@ -37,6 +37,7 @@ li {
   margin-bottom: 23px;
   width: 720px;
   margin: 0 auto 23px auto;
+  font-weight: 100;
 }
 .header ul.funcs {
   text-align: center;
