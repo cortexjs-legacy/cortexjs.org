@@ -5,26 +5,6 @@
     <title>Cortex</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="lib/highlightjs/default.css">
-    <script src="lib/highlightjs/highlight.min.js"></script>
-    <script src="lib/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript">
-      hljs.initHighlightingOnLoad();
-      $(function(){
-        var win_height = $(window).height();
-        var padding = 200;
-        var height = win_height - padding;
-        // if(height > 374){
-        //     $(".header").css("height", height);
-        //     $(".header-inner").css("padding-top", win_height / 2 - 40);
-        // }
-        $(".to-bottom .btns").on("click",function(){
-            $('html, body').animate({
-                scrollTop: win_height
-            }, 500, 'swing');
-            return false;
-        })
-      })
-    </script>
 </head>
 <body>
     
@@ -82,5 +62,25 @@
             <a href="https://github.com/cortexjs/cortex/issues/new" target="_blank">Report Issues</a>
         </div>
     </div>
+<script src="lib/highlightjs/highlight.min.js"></script>
+<script src="lib/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+  hljs.initHighlightingOnLoad();
+  $(function(){
+    var win_height = $(window).height();
+    var padding = 200;
+    var height = win_height - padding;
+    // if(height > 374){
+    //     $(".header").css("height", height);
+    //     $(".header-inner").css("padding-top", win_height / 2 - 40);
+    // }
+    $(".to-bottom .btns").on("click",function(){
+        $('html, body').animate({
+            scrollTop: win_height
+        }, 500, 'swing');
+        return false;
+    })
+  })
+</script>
 </body>
 </html>
